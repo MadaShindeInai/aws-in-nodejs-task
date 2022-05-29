@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## [S3 Bucket Deployment](http://madashindeinai.s3-website-eu-west-1.amazonaws.com/)
+## [S3 Bucket Deployment Link](http://madashindeinai.s3-website-eu-west-1.amazonaws.com/)
 
 ## Available Scripts
 
