@@ -1,12 +1,13 @@
-service: node-in-aws-web
+service: cra-deploy
 
-frameworkVersion: '2'
+frameworkVersion: '2 || 3'
+
 
 provider:
   name: aws
-  runtime: nodejs12.x
-  # setup profile for AWS CLI.
-  # profile: node-aws
+  runtime: nodejs14.x
+  profile: myOwn
+  region: eu-west-1
 
 plugins:
   - serverless-finch
@@ -17,12 +18,11 @@ plugins:
 
 custom:
   client:
-    bucketName: node-in-aws-web-bucket
+    bucketName: madashindeinai-2
     distributionFolder: build
-  s3BucketName: ${self:custom.client.bucketName}
-
   ## Serverless-single-page-app-plugin configuration:
   s3LocalPath: ${self:custom.client.distributionFolder}/
+  s3BucketName: ${self:custom.client.bucketName}
 
 resources:
   Resources:
@@ -60,7 +60,7 @@ resources:
     OriginAccessIdentity:
       Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
       Properties:
-        CloudFrontOriginAccessIdentityConfig:
+        CloudFrontOriginAccessIdentityConfig:  
           Comment: Access identity between CloudFront and S3 bucket
 
     ## Specifying the CloudFront Distribution to server your Web Application
