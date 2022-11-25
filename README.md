@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Run: `"cloudfront:update:build:deploy:nc"` to deploy latest changes via cloudformation.
+## Run: `npm run cloudfront:update:build:deploy:nc` to deploy latest changes via cloudformation.
 ## [Cloudformation Deployment Link](https://d2j3k3jmqghyx9.cloudfront.net)
 
 ## Available Scripts
