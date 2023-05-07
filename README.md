@@ -1,6 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## [S3 Bucket Deployment](http://madashindeinai.s3-website-eu-west-1.amazonaws.com/)
+## Run: `npm run cloudfront:update:build:deploy:nc` to deploy latest changes via cloudformation.
+## [Cloudformation Deployment Link](https://d2j3k3jmqghyx9.cloudfront.net)
 
 ## Available Scripts
 
